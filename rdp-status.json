@@ -1,25 +1,25 @@
 {
   "active": false,
-  "hostname": "rdpfree-1",
+  "hostname": "rdpfree-2",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "ram_gb": 16.0,
     "cpu_threads": 4,
-    "disk_free_gb": 79.6
+    "ram_gb": 16.0,
+    "disk_free_gb": 79.5
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-13T19:19:39Z",
-  "expires_at": "2026-10-14T01:14:39Z",
+  "started_at": "2026-10-14T09:57:26Z",
+  "expires_at": "2026-10-14T15:52:26Z",
   "duration_menit": 355,
-  "run_id": "38453915983",
+  "run_id": "38546098322",
   "run_attempt": "1",
-  "run_number": "1",
-  "run_url": "https://github.com/ManzDonzzz/free/actions/runs/38453915983",
+  "run_number": "2",
+  "run_url": "https://github.com/ManzDonzzz/free/actions/runs/38546098322",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -39,69 +39,15 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "status": "ok",
+      "note": "Tailscale menolak koneksi. Periksa masa berlaku auth key dan persetujuan perangkat di tailnet.",
+      "status": "failed",
       "ip": "",
       "magicdns": "",
       "hostname": "",
       "funnel_addr": ""
-    }
-  },
-  "media": {
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "audio_output": "rdp_playback_enabled",
-    "microphone": "rdp_capture_enabled",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
-  },
-  "samp": {
-    "play_tested": false,
-    "netfx3": "Enabled",
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "directx": "verified_x86_x64",
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "status": "dependencies_ready",
-    "directplay": "Enabled",
-    "gta_installed": false,
-    "samp_installed": false
-  },
-  "games": {
-    "samp": {
-      "gta_installed": false,
-      "game_dir": null,
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-      "samp_installed": false,
-      "status": "dependencies_ready"
     },
-    "minecraft_bedrock": {
-      "status": "disabled",
-      "note": "Tidak dipilih"
-    },
-    "minecraft_java": {
-      "status": "disabled",
-      "note": "Tidak dipilih"
-    },
-    "roblox": {
-      "status": "disabled",
-      "note": "Tidak dipilih"
-    }
+    "mode": "tailscale"
   },
-  "game_environment": {
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "play_tested": false,
-    "runner": "windows-2022",
-    "windows_server": true,
-    "hypervisor_present": true
-  },
-  "host_tools": {
-    "winrar": "verified 7.23.0 (vendor trial; license not included)",
-    "vcredist": "verified_current_v14_x86_x64",
-    "xampp": "verified_files_php_apache_config_mariadb_version; services not started",
-    "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
-    "errors": [],
-    "public_port": false
-  },
-  "heartbeat_at": "2026-10-14T01:11:19.5817187Z",
-  "stopped_at": "2026-10-14T01:12:40Z"
+  "stopped_at": "2026-10-14T09:57:39Z"
 }
